@@ -1,0 +1,35 @@
+.navbar {
+  background-color: white;
+  height: 70px;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.navbar-buttons button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.navbar-buttons button:hover {
+  background-color: #f2f2f2;
+}

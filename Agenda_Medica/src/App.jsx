@@ -4,6 +4,9 @@ import { useState } from "react";
 import Navbar from "./componentes/NavBarSup/Navbar";
 import PantallaLogin from "./Paginas/PantallaLogin";
 import AgendarCita from "./Paginas/AgendarCita";
+import Ficha from "./Paginas/FichaMedica";
+import HistorialClinico from "./Paginas/HistorialClinico";
+import ListaPacientes from "./Paginas/ListaPacientes";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -29,7 +32,46 @@ function App() {
               <Navigate to="/" />
             )
           }
+
         />
+
+        <Route
+          path="/ficha"
+          element={
+            isLoggedIn ? (
+              <Ficha />
+            ) : (
+              <Ficha />
+            )
+          }
+
+        />
+
+        <Route
+          path="/historial"
+          element={
+            isLoggedIn ? (
+              <HistorialClinico />
+            ) : (
+              <HistorialClinico />
+            )
+          }
+
+        />
+
+        <Route
+          path="/pacientes"
+          element={
+            isLoggedIn ? (
+              <ListaPacientes />
+            ) : (
+              <ListaPacientes />
+            )
+          }
+
+        />
+
+
       </Routes>
     </BrowserRouter>
   );
