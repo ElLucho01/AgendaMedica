@@ -1,0 +1,41 @@
+/* Fondo general */
+body {
+  background-color: #f6f8fb;
+}
+
+/* Títulos de páginas */
+.page-title {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Cards consistentes */
+.med-card {
+  border: none;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.med-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Botones full consistentes */
+.med-btn {
+  border-radius: 8px;
+}
+
+/* Navbar más limpio */
+.navbar {
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Texto secundario */
+.text-muted-small {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
